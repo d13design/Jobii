@@ -1,0 +1,197 @@
+/* Global styles */
+body{
+	margin:4px 0px 0px 0px;
+	font-family:Helvetica Neue;
+	font-size:12px;
+}
+h1,h2,h3,h4,p{
+	margin:0px;
+	padding:0px;
+}
+/* Webkit specific styles for any scrollbars */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    -webkit-border-image: url(vertical-thumb.png) 16 0 16 0;
+    border-color: transparent;
+    border-width: 16px 0;
+    min-height: 20px;
+}
+/* Structural styles */
+#left{
+	width:60px;
+	background-image:url(leftbg.png);
+	background-position:top right;
+	float:left;
+	height:100%;
+}
+#right{
+	float:left;
+	height:576px;
+	overflow:hidden;
+	width:300px;
+}
+/* Horiztonal menu */
+#menu{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #454545;
+	background-image:url(menubg.png);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+}
+	#menu a{
+		height:30px;
+		width:98px;
+		display:block;
+		color:#212121;
+		text-decoration:none;
+		text-shadow: 0px 1px 0px #e5e5ee;
+		float:left;
+		padding-left:5px;
+	}
+		#menu a#live{
+			width:68px;
+			background-image:url(divider.png);
+			background-position:top right;
+			background-repeat:repeat-y;
+		}
+#spinner{
+	width:30px;
+	height:30px;
+	float:right;
+	background-image:url(ajax-loader.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+/* Main holder DIVs for live items, completed items and other pages */
+#items{
+	background-color:#e5e5ee;
+	width:300px;
+	height:546px;
+	overflow:auto;
+	position:absolute;
+	left:60px;
+	top:35px;
+}
+#completed{
+	background-color:#c1c1cc;
+	width:300px;
+	height:546px;
+	overflow:auto;
+	position:absolute;
+	left:60px;
+	top:35px;
+}
+#new,#settings,#about{
+	background-color:#ababaa;
+	width:300px;
+	height:546px;
+	overflow:auto;
+	position:absolute;
+	left:60px;
+	top:35px;
+}
+/* Styling for page details - new, about and settings */
+#new h3,#settings h3,#about h3{
+	margin:8px;
+	color:#212121;
+	text-shadow: 0px 1px 0px #e5e5ee;
+}
+#new label,#settings label,#about label{
+	margin:4px 0px 4px 8px;
+	width:80px;
+	display:block;
+	float:left;
+}
+#new p,#settings p,#about p{
+	margin:4px 8px;
+}
+/* Styling for a live item */
+div.item{
+	background-color:#cecece;
+	margin:4px;
+	padding:4px;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* Styling for a live item near it's deadline */
+div.itemclose{
+	background-color:#FEC768;
+	margin:4px;
+	padding:4px;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* Styling for an overdue live item */
+div.itemoverdue{
+	background-color:#FEC0BA;
+	margin:4px;
+	padding:4px;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* Styling for completed items */
+#completed div.item,
+#completed div.itemclose,
+#completed div.itemoverdue{
+	background-color:#adadad;
+	text-decoration:line-through;
+}
+/* General styles for all items */
+	div.item h3,
+	div.itemclose h3,
+	div.itemoverdue h3{
+		color:#212121;
+		text-shadow: 0px 1px 0px #e5e5ee;
+		margin-bottom:2px;
+	}
+	div.item p,
+	div.itemclose p,
+	div.itemoverdue p{
+		margin-top:2px;
+		margin-bottom:3px;
+		padding:0px;
+	}
+		p.meta{
+			color:#454545;
+			font-style:italic;
+		}
+/* Structural styles for items */
+div.itemdata{
+	float:left;
+	width:245px;
+}
+div.itemactions{
+	width:20px;
+	float:right;
+}
+	div.itemactions img{
+		clear:both;
+		cursor:pointer;
+	}
+div.break{
+	clear:both;
+	font-size:0px;
+}
+/* Styles for the left hand menu */
+#logo{
+	width:44px;
+	height:44px;
+	background-color:white;
+	margin:8px;
+	-webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+	#logo img{
+		margin:3px;
+	}
+div.link{
+	width:44px;
+	height:44px;
+	/*background-color:#454545;*/
+	margin:8px;
+}
+	div.link img{
+		cursor:pointer;
+	}
+

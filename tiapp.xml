@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ti:app xmlns:ti='http://ti.appcelerator.org'>
+<!-- These values are edited/maintained by Titanium Developer -->
+	<id>com.myknowledgemap.jobii</id>
+	<name>Jobii</name>
+	<version>1.0</version>
+	<publisher>davewaller</publisher>
+	<url>http://www.myknowledgemap.com</url>
+	<icon>default_app_logo.png</icon>
+	<copyright>2009 by davewaller</copyright>
+	<!-- Window Definition - these values can be edited -->
+	<window>
+		<id>initial</id>
+		<title>Jobii</title>
+		<url>app://index.html</url>
+		<width>360</width>
+		<max-width>360</max-width>
+		<min-width>360</min-width>
+		<height>580</height>
+		<max-height>580</max-height>
+		<min-height>580</min-height>
+		<fullscreen>false</fullscreen>
+		<resizable>false</resizable>
+		<chrome scrollbars="false">true</chrome>
+		<maximizable>true</maximizable>
+		<minimizable>true</minimizable>
+		<closeable>true</closeable>
+	</window>
+</ti:app>
